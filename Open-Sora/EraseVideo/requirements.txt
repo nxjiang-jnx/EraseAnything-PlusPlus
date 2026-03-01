@@ -1,0 +1,34 @@
+# Requirements for EraseVideo
+# Install on top of Open-Sora requirements
+
+# Core dependencies
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+diffusers>=0.27.0
+accelerate>=0.20.0
+
+# LoRA and model optimization
+peft>=0.4.0
+bitsandbytes>=0.41.0  # Optional, for 8-bit Adam
+
+# Video processing
+decord>=0.6.0
+opencv-python>=4.8.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.8
+
+# Data and utilities
+numpy>=1.24.0
+Pillow>=10.0.0
+PyYAML>=6.0
+tqdm>=4.65.0
+
+# API clients (optional, for concept generation)
+openai>=1.0.0  # Optional
+anthropic>=0.3.0  # Optional
+
+# Monitoring
+wandb  # Optional
+tensorboard  # Optional
+
