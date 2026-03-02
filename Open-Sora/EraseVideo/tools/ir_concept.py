@@ -1,27 +1,16 @@
-"""
-Irrelevant Concept Generation using LLM
-Adapted from EraseAnything
-"""
 import random
 from typing import List, Dict, Optional
 
 
 class UniversalModelCaller:
-    """
-    Universal API caller for different LLM providers
-    """
     def __init__(self, api_keys: Dict):
         self.api_keys = api_keys
         self.available_models = [k for k, v in api_keys.items() if v is not None]
     
     def call_model(self, model_name: str, prompt: str) -> str:
-        """
-        Call specified model with prompt
-        """
         if model_name not in self.available_models:
             raise ValueError(f"Model {model_name} not available")
         
-        # Placeholder - implement actual API calls
         if model_name == "gpt":
             return self._call_gpt(prompt)
         elif model_name == "claude":
@@ -32,7 +21,6 @@ class UniversalModelCaller:
             return "concept1, concept2, concept3"
     
     def _call_gpt(self, prompt: str) -> str:
-        """Call GPT API"""
         try:
             import openai
             config = self.api_keys["gpt"]

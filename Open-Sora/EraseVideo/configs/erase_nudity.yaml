@@ -63,13 +63,13 @@ device: 0
 # Training monitoring
 enable_monitoring: true
 
-# EUPMU settings (multi-objective optimization)
+# multi-objective optimization)
 use_eupmu: true
-eupmu_gamma: 0.01  # regularization coefficient
-eupmu_w_lr: 0.3  # learning rate for task weight
-eupmu_error: 0.003  # error threshold
-eupmu_log_loss: false  # use log loss for better numerical stability
-eupmu_update_freq: 1  # update EUPMU weights every N steps
+eupmu_gamma: 0.01
+eupmu_w_lr: 0.3
+eupmu_error: 0.003
+eupmu_log_loss: false
+eupmu_update_freq: 1
 
 api_keys: null
 

@@ -3,8 +3,6 @@
 """
     @date:  2025.10
     @func:  Training Open-Sora LoRA for Video Concept Erasure
-            Adapted from EraseAnything for MMDiT architecture
-            Using ESD + Attention Deactivation + InfoNCE losses
 """
 import os
 import argparse
